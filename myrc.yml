@@ -7,15 +7,15 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: nginx
+    app: mynginx
   template:
     metadata:
       name: nginx
       labels:
-        app: nginx pod
+        app: mynginx
     spec:
       containers:
         - name: nginxcontainer
           image: nginx
           ports:
-            - containerPort: 8080
+            - containerPort: 80
